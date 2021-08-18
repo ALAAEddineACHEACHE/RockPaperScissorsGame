@@ -2,7 +2,6 @@ function rpsGame(yourChoice) {
     var humanChoice, botChoice;
     humanChoice = yourChoice.id;
     botChoice = numbertoChoice(RdmtoRpsInt());
-
     results = decideWinner(humanChoice, botChoice);//[0,1] human lost | bot won
     console.log(results);
 
@@ -59,7 +58,4 @@ function rpsFrontend(humanImageChoice, botImageChoice, finalMessage) {
     document.getElementById('flex-box-rps-div').appendChild(messageDiv);
     document.getElementById('flex-box-rps-div').appendChild(botDiv);
    
-
-
-
 }
